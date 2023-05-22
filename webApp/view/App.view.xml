@@ -1,0 +1,12 @@
+<mvc:View 
+  controllerName="sap.ui.demo.walkthrough.controller.App" 
+  xmlns="sap.m" 
+  xmlns:mvc="sap.ui.core.mvc">
+  <Button text="Button" 
+  press=".showButton"/>
+  <Input
+    value="{/entrada/chocolate}"
+    description="Você Digitou: {/entrada/chocolate}"
+    valueLiveUpdate="true"
+    width="70%"/>
+</mvc:View>
