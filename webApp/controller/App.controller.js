@@ -5,9 +5,9 @@ sap.ui.define([
   "use strict";
   return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
      onShowHello : function () {       
-        var oBundle = this.getView().getModel("i18n").getResourceBundle();
-        var sRecipient = this.getView().getModel().getProperty("/recipient/name");
-        var sMsg = oBundle.getText("msg", [sRecipient]);        
+        let oBundle = this.getView().getModel("i18n").getResourceBundle();
+        let sRecipient = this.getView().getModel().getProperty("/recipient/name");
+        let sMsg = oBundle.getText("msg", [sRecipient]);        
         MessageToast.show(sMsg);
      }
   });

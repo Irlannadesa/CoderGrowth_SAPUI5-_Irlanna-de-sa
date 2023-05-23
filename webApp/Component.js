@@ -8,16 +8,14 @@ sap.ui.define([
             interfaces: ["sap.ui.core.IAsyncContentCreation"],
             manifest: "json"
       },
-      init : function () {
-         // call the init function of the parent
-         UIComponent.prototype.init.apply(this, arguments);
-         // set data model
-         var oData = {
+      init : function () {         
+         UIComponent.prototype.init.apply(this, arguments);         
+         let oData = {
             recipient : {
                name : " "
             }
          };
-         var oModel = new JSONModel(oData);
+         let oModel = new JSONModel(oData);
          this.setModel(oModel);
       }
    });
