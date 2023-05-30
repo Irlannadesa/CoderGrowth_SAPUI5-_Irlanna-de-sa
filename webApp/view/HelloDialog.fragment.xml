@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="helloDialog"
+      title="Abrindo o modal para testar {/recipient/name}">
+       <content> 
+         <core:Icon 
+            src="sap-icon://error" 
+            size="2rem" 
+            class="sapUiMediumMargin"
+          />            
+      </content>       
+      <beginButton>
+        <Button
+          text="{i18n>dialogCloseButtonText}"
+          press=".onCloseDialog"
+        />
+      </beginButton>
+   </Dialog>
+   
+</core:FragmentDefinition>
