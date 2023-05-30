@@ -1,34 +1,34 @@
-<mvc:View
+<!-- <mvc:View
 	controllerName="sap.ui.demo.walkthrough.controller.App"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
 	<Shell>
-		<App>
+
+	< Shell > 
+	< App  class = "myAppDemoWT"  id = "aplicativo" /> 
+</ Shell >
+		<App class="myAppDemoWT">
 			<pages>
 				<Page title="{i18n>homePageTitle}">
 					<content>
-						<Panel
-							headerText="{i18n>helloPanelTitle}"
-							class="sapUiResponsiveMargin"
-							width="auto">
-							<content>
-								<Button
-									text="{i18n>showHelloButtonText}"
-									press=".onShowHello"
-									class="sapUiSmallMarginEnd"/>
-								<Input
-									value="{/recipient/name}"
-									valueLiveUpdate="true"
-									width="60%"/>
-								<!-- <Text
-									text="Olá! {/recipient/name}"
-									class="sapUiSmallMargin"/> -->
-							</content>
-						</Panel>
+						<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel"/>
+						<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList"/>
 					</content>
 				</Page>
 			</pages>
 		</App>
 	</Shell>
+	<Shell>
+	<App class="myAppDemoWT" id="app"/>
+</Shell>
+</mvc:View> -->
+<mvc:View
+		controllerName="sap.ui.demo.walkthrough.controller.App"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc"
+		displayBlock="true">
+<Shell>
+	<App class="myAppDemoWT" id="app"/>
+</Shell>
 </mvc:View>

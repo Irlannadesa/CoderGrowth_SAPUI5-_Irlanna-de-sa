@@ -5,18 +5,19 @@ sap.ui.define([
    "use strict";
    return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
       metadata : {
-            interfaces: ["sap.ui.core.IAsyncContentCreation"],
-            manifest: "json"
+         interfaces: ["sap.ui.core.IAsyncContentCreation"],
+         manifest: "json"
       },
       init : function () {         
          UIComponent.prototype.init.apply(this, arguments);         
          let oData = {
-            recipient : {
-               name : " "
+            recipient:{
+               name: " "
             }
          };
          let oModel = new JSONModel(oData);
          this.setModel(oModel);
+         this.getRouter().initialize();
       }
    });
 });
